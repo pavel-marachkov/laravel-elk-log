@@ -1,12 +1,12 @@
 {
-    "name": "ahmedofali/laravel-elk-log",
+    "name": "pavel-marachkov/laravel-elk-log",
     "description": "Integrate laravel with elastic search for sending all logs to elastic search ",
     "keywords": [
         "laravel",
         "elasticsearch",
         "log"
     ],
-    "homepage": "https://github.com/ahmedofali/laravel-elk-log",
+    "homepage": "https://github.com/pavel-marachkov/laravel-elk-log",
     "license": "MIT",
     "authors": [
         {

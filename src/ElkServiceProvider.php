@@ -5,9 +5,9 @@ namespace Elklog;
 use Elasticsearch\Client;
 use Elasticsearch\ClientBuilder;
 use Elklog\Commands\InstallCommand;
+use Elklog\Formatter\KibanaFormatter;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Monolog\Formatter\ElasticsearchFormatter;
 
 class ElkServiceProvider extends LaravelServiceProvider
 {
@@ -44,8 +44,8 @@ class ElkServiceProvider extends LaravelServiceProvider
             return ClientBuilder::create()->setHosts([$url])->build();
         });
 
-        $this->app->bind(ElasticsearchFormatter::class, function ($app) {
-            return new ElasticsearchFormatter( $this->getIndexName(), $this->getIndexType() );
+        $this->app->bind(KibanaFormatter::class, function ($app) {
+            return new KibanaFormatter( $this->getIndexName(), $this->getIndexType() );
         });
 
     }

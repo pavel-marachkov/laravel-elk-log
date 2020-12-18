@@ -1,7 +1,7 @@
 <?php
 
 use Monolog\Handler\ElasticsearchHandler ;
-use Monolog\Formatter\ElasticsearchFormatter ;
+use Elklog\Formatter\KibanaFormatter;
 
 return [
     'default' => env('LOG_CHANNEL', 'elastic'),
@@ -11,7 +11,7 @@ return [
             [ 'driver', 'monolog' ],
             [ 'handler', ElasticsearchHandler::class ],
             [ 'level',  'debug' ],
-            [ 'formatter',  ElasticsearchFormatter::class ]
+            [ 'formatter',  KibanaFormatter::class ]
         ],
     ],
 ];

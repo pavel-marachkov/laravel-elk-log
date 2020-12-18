@@ -1,13 +1,26 @@
 # Laravel with ElasticSearch Implementation
 
-This package is simple initializer of elasticsearch with laravel 
+
+This package is fork from [ahmedofali/laravel-elk-log](https://github.com/ahmedofali/laravel-elk-log).
+That package is simple initializer of elasticsearch logs for kibana with laravel. 
 
 ## Installation
 
-You can install the package via composer:
+Add repository to your composer.json file:
+```json
+{
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/pavel-marachkov/laravel-elk-log"
+        }
+    ]
+}
+```
+and install the package via composer:
 
-```bash
-composer require ahmedofali/laravel-elk-log
+``` bash
+composer require pavel-marachkov/laravel-elk-log
 ```
 
 ## Usage
@@ -40,4 +53,4 @@ After you publish config file you will find new config file called elk.php add y
 
 ## Credits
 
-- [ahmedofali](https://github.com/ahmedofali)
+- [pavel-marachkov](https://github.com/pavel-marachkov)

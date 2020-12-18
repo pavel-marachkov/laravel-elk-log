@@ -27,7 +27,7 @@ class KibanaFormatter extends ElasticsearchFormatter
 	{
 		$record = parent::format($record);
 
-		return $this->getDocument($record);
+		return $this->getDocumentForKibana($record);
 	}
 
 	/**
@@ -36,10 +36,10 @@ class KibanaFormatter extends ElasticsearchFormatter
 	 * @param  array $record Log message
 	 * @return array
 	 */
-	protected function getDocument(array $record): array
-	{
-		$record['@timestamp'] = $record['datetime'];
+	protected function getDocumentForKibana(array $record): array
+    	{
+    		$record['@timestamp'] = $record['datetime'];
 
-		return $record;
-	}
+    		return $record;
+    	}
 }

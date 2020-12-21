@@ -41,7 +41,7 @@ return [
             'driver' => 'monolog',
             'handler' => ElasticsearchHandler::class,
             'level' => 'debug',
-            'formatter' => ElasticsearchFormatter::class
+            'formatter' => KibanaFormatter::class
         ],
     ],
 

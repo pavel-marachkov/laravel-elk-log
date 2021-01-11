@@ -10,6 +10,12 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Pavel Marachkov",
+            "email": "pavel.marachkov@gmail.com",
+            "homepage": "https://github.com/pavel-marachkov/laravel-elk-log",
+            "role": "Developer"
+        },
+        {
             "name": "ahmedofali",
             "email": "dev.ahmed.abbas@gmail.com",
             "homepage": "https://github.com/ahmedofali/laravel-elk-log",

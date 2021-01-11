@@ -47,7 +47,6 @@ class ElkServiceProvider extends LaravelServiceProvider
         $this->app->bind(KibanaFormatter::class, function ($app) {
             return new KibanaFormatter( $this->getIndexName(), $this->getIndexType() );
         });
-
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-use Monolog\Handler\ElasticsearchHandler ;
+use Elklog\ElkHandler;
 use Elklog\Formatter\KibanaFormatter;
 
 return [
@@ -9,8 +9,8 @@ return [
     'channels' => [
         'elastic' => [
             [ 'driver', 'monolog' ],
-            [ 'handler', ElasticsearchHandler::class ],
-            [ 'level',  'debug' ],
+            [ 'handler', ElkHandler::class ],
+            [ 'level',  'notice' ],
             [ 'formatter',  KibanaFormatter::class ]
         ],
     ],

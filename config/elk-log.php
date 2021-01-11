@@ -2,15 +2,17 @@
 
 return [
     'live' => [
+        'enabled' => true,
         'schema' => 'http',
-        'domain' => 'asalahnew_elasticsearch_1',
+        'domain' => 'you_elasticsearch_1',
         'port' => '9200',
-        'index' => 'laravel_local',
+        'index' => 'laravel_live',
         'type' => '_doc'
     ],
     'local' => [
+        'enabled' => false,
         'schema' => 'http',
-        'domain' => 'asalahnew_elasticsearch_1',
+        'domain' => 'you_elasticsearch_1',
         'port' => '9200',
         'index' => 'laravel_local',
         'type' => '_doc'
